@@ -3,3 +3,10 @@
   max-width: 900px;
 }
 
+@media (min-width: 769px) and (max-width: 1000px) {
+  #home-articles .articles-container {
+    grid-template-columns: repeat(2 , 1fr) !important;
+    grid-column: 1;
+  }
+}
+
