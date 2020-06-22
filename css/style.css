@@ -1,0 +1,464 @@
+:root {
+  --primary-color: #c72727;
+  --secondary-color: #f99500;
+  --light-color : #f3fef3;
+  --dark-color: #333;
+  --max-width: 1300px;
+}
+
+.category {
+  --sports-color: #f99500;
+  --ent-color: #a66bbe;
+  --tech-color: #009cff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: black;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+img {
+  width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-bottom: .5rem;
+  line-height: 1.3rem;
+}
+
+h1 {
+  line-height: 2.25rem;
+}
+
+
+p {
+  margin: .5rem 0;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+
+/* utility */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.nav-container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.px-1{ padding: 0 1.5rem;}
+.px-2{ padding: 0 2rem;}
+.px-3{ padding: 0 3rem;}
+
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: .55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.white {
+  color: white;
+}
+
+.category-bs { background: var(--sports-color); }
+.category-js { background: var(--ent-color); }
+.category-node { background: var(--tech-color); }
+.category-react { background: var(--primary-color); }
+.category-ejs { background: green }
+.category-api { background: #45046a }
+.category-mern { background: #204051 }
+.category-sql { background: #00005c }
+.category-angular { background: #9d0b0b }
+.category-mongo { background:lightgreen }
+
+
+.l-heading {
+  font-size: 3rem;
+  margin: 1rem 0;
+  line-height: 3.5rem;
+}
+
+.m-heading 
+{
+  font-size: 1.5rem;
+  margin: .7rem 0;
+  line-height: 2.5rem;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--dark-color);
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+}
+
+.btn-light { background: var(--light-color); }
+.btn-black { background: black; }
+.btn-primary { background: var(--primary-color); }
+.btn-secondary { background: var(--secondary-color); }
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.card{
+  padding: 1rem;
+}
+.p-1 { padding: 1.5rem;}
+.p-2 { padding: 2rem;}
+.p-3 { padding: 3rem;}
+
+.px-1 { padding: 0 1.5rem ; }
+.px-2 { padding: 0 2rem ;}
+.px-3 { padding: 0 3rem ; }
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0 ;}
+.py-3 { padding: 3rem 0 ;}
+
+.pt-1 { padding-top:1.5rem; }
+.pt-2 { padding-top: 2rem; }
+.pt-3 { padding-top: 3rem; }
+
+.pb-1 { padding-bottom:1.5rem; }
+.pb-2 { padding-bottom: 2rem; }
+.pt-3 { padding-bottom: 3rem; }
+
+.m-1 { margin: 1.5rem;}
+.m-2 { margin: 2rem;}
+.m-3 { margin: 3rem;}
+
+.mx-1 { margin: 0 1.5rem;  }
+.mx-2 { margin: 0 2rem; }
+.mx-3 { margin: 0 3rem;  }
+
+.my-1 { margin: 1.5rem 0; }
+.my-2 { margin: 2rem 0; }
+.my-3 { margin: 3rem 0;}
+
+.mt-1 { margin-top:1.5rem; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; }
+
+.mb-1 { margin-bottom:1.5rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }
+
+
+
+.bg-black {
+  background-color: black;
+  color: #fff;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.bg-black h1,
+.bg-black h2,
+.bg-black h3,
+.bg-black a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+  color: #fff ;
+}
+
+
+
+.list li {
+  padding: .5rem 0;
+  border-bottom: 1px dotted black;
+  width: 90%;
+}
+
+.list li a:hover {
+  color: var(--primary-color) !important;
+}
+
+
+
+
+
+/* navbar */
+#nav {
+  background: #1B1B1B;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#nav .nav-container {
+  display: grid;
+  grid-template-columns: 6fr 3fr 2fr;
+  padding: 1rem;
+  align-items: center;
+}
+
+#nav .logo {
+  width: 180px;
+}
+
+#nav ul {
+  justify-self: end;
+  display: flex;
+}
+
+#nav ul li a {
+  color: white;
+  padding: 0.75rem;
+  font-weight: bold;
+}
+
+#nav ul li a.current {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+#nav ul li a:hover {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+#nav .social {
+  display: flex;
+  justify-self: center;
+}
+
+#nav .social i {
+  color: white;
+  margin-right: 0.5rem;
+}
+
+/* showcase */
+#showcase {
+  background: #777;
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+  height: 83vh;
+}
+
+#showcase:before {
+  content: '';
+  background: url('../img/articles/nodejs.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+}
+
+#showcase .showcase-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+
+}
+
+#showcase .showcase-content {
+  z-index: 1;
+}
+
+#showcase .showcase-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* home-articles */
+
+#home-articles .card{
+  background: #1d1919;
+  padding: 1rem;
+  color: white;
+}
+#home-articles article:hover {
+  opacity: 0.8;
+}
+#home-articles .card a {
+  color: white;
+}
+
+#home-articles .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+
+/* footer */
+
+#footer {
+  background-color: #1B1B1B;
+  color: #fff;
+}
+
+#footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+
+#footer .footer-container img {
+  width: 150px;
+}
+
+#footer .footer-container a {
+  color: white;
+}
+
+#footer .footer-container input[type='email'], #footer .footer-container input[type='submit'] {
+  width: 90%;
+  padding: .5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+#footer .footer-container > *:last-child {
+  grid-column: 1 / span 4;
+  text-align: center;
+  padding: .5rem;
+  border-top: 1px white solid ;
+  padding: 1rem;
+}
+
+/* about */
+#about  {
+  margin: 2rem 0;
+}
+
+#about p {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* article */
+
+#article p {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1B1B1B;
+  color: white;
+  padding: 0.5rem;
+}
+
+#article .meta .category {
+  margin-top: 0.4rem;
+}
+
+#article .article-list {
+  list-style: disc;
+  padding-left: 2.5rem;
+  margin: 1.5rem 0;
+}
+
+#article .article-list li {
+  padding: .5rem;
+}
+
+.article-header {
+  position: relative;
+  width:100%;
+  height:50vh;
+  overflow: hidden;
+  background:#000;
+}
+
+.article-header #article-bs, #article-node, #article-react, #article-js, #article-ejs, #article-mern, #article-api, #article-angular, #article-mongo, #article-sql {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../img/articles/articlebootstrap5.jpg') no-repeat center center/cover;
+}
+
+.article-header #article-node {
+  background: url('../img/articles/nodejs.jpg') no-repeat center center/cover;
+}
+
+.article-header #article-react {
+  background: url('../img/articles/react-alt.png') no-repeat center center/cover;
+}
+.article-header #article-js {
+  background: url('../img/articles/js1.jpg') no-repeat center center/cover;
+}
+.article-header #article-ejs {
+  background: url('../img/articles/ejs.png') no-repeat center center/cover;
+}
+.article-header #article-mern {
+  background: url('../img/articles/mern.jpg') no-repeat center center/cover;
+}
+.article-header #article-api {
+  background: url('../img/articles/api.webp') no-repeat center center/cover;
+}
+.article-header #article-angular {
+  background: url('../img/articles/angular.png') no-repeat center center/cover;
+}
+.article-header #article-mongo {
+  background: url('../img/articles/mongo.png') no-repeat center center/cover;
+}
+.article-header #article-sql {
+  background: url('../img/articles/sql.png') no-repeat center center/cover;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <title>NewsGrid | Mern</title>
+  
+
+</head>
+<body>
+  <nav id="nav">
+    <div class="nav-container">
+      <img src="img/logo_light.png" alt="newsgrid logo" class="logo">
+      <div class="social">
+        <a href="https://facebook.com" target="blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com" target="blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://instagram.com" target="blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://youtube.com" target="blank"><i class="fab fa-youtube fa-2x"></i></a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="article-header">
+    <div id="article-mern">
+    </div>
+  </section>
+  
+
+  <section id="article" class="mb-2">
+    <div class="container max-width">
+      <article class="card">
+        <div class="">
+          <h1 class="l-heading">
+            How does the MERN stack work?
+          </h1>
+          <div class="meta">
+            <small>
+              <i class="fas fa-user"> Written By Dinesh July 20, 2020</i>
+            </small>
+            <div class="category category-mern">MERN STACK</div>
+          </div>
+          <p>In our first article of this series we looked at what the MERN stack is and the technologies that it is composed of. This second installment aims to shed light on how the MERN stack works – in other words, how the languages ​​forming the MERN or the MEAN stack work together to create complex, powerful and above all impressive applications.</p>
+          <p>Like with a web application, let’s cut the MERN stack into two blocks: a back-end and a front-end.</p>
+          <p>Below is a diagram that will help you visualize how we distinguish the two blocks that form the MERN stack, with the front-end on the left and the back-end on the right.</p>
+          <p>Finally on the right, you’ll see the MongoDB database, which stores the data used in the application or software.</p>
+          <img src="img/articles/mern1.png" alt="">
+        </div>
+        <div>
+          <h2 class="mt-2 m-heading">Developing the back-end with the MERN stack</h2>
+          <p>MongoDB, Node.js and Express are dedicated to developing the back-end of web applications. This corresponds to database management, scripts, html documents, HTTP requests, etc.</p>
+          <p>With the MERN stack, the developers create URLs, such as application / users / create. On these URLs, they then create, read and modify the data that is stored and retrieved in the MongoDB database.
+          </p>
+          <p>These URLs represent functions, with HTTP calls as the originators. The data is sent via the requests and the server in return will be responsible for modifying the database and sending everything back in JSON format (a format that is very practical because it is readable by JavaScript, the language used by all the technologies making up the MERN stack).</p>
+          <p>
+            At this point, it’s time to start discussing the second block of the MERN stack: the front-end.
+          </p>
+        </div>
+        <div>
+          <h2 class="m-heading py-1">Developing the front-end with the MERN stack</h2>
+          <p class="">React’s role is to execute HTTP requests. With React, developers make Ajax calls. This allows them to set up dynamic data downloads without the need for reloading the page. As a result, the web application is made to be much faster than average.
+          </p>
+          <p>Ajax is really interesting because it acts in an invisible way. The user has the impression that the data displayed has always been present, whereas thanks to Ajax, it has just been downloaded. When, for example, you write a comment at the bottom of an article on a site and the site does not reload, it’s thanks to Ajax.</p>
+          <p>If you have IT development needs and you want to have an idea of ​​our prices or team building methods for offshore developers that we implement, contact us – we will be happy to discuss your projects with you.</p>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer id="footer" class="pt-2">
+    <div class="container footer-container">
+      <div>
+        <img src="img/logo_light.png" alt="logo light">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur totam est aut alias cumque quibusdam ea, exercitationem autem incidunt facere.</p>
+      </div>
+      <div>
+        <h3>EMAIL NEWSLETTER</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, obcaecati?</p>
+        <form action="">
+          <input type="email" name="email" placeholder="Enter Email" id="email">
+          <input class="btn btn-primary" type="submit" value="Subscribe">
+        </form>
+      </div>
+      <div>
+        <h2>categories</h2>
+        <ul class="list">
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Sports</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Entertainment</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Technology</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Fashion</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Shopping</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>JOIN OUR CLUB</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nam!</p>
+        <a href="#" class="btn btn-secondary">Join Now</a>
+      </div>
+      <div>
+        <p>Copyright © 2020, All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    var headerBg = document.getElementById('article-mern');
+    window.addEventListener('scroll', function(){
+      headerBg.style.opacity = 1 - +window.pageYOffset/550+'';
+      headerBg.style.top = +window.pageYOffset+'px';
+      headerBg.style.backgroundPositionY = - +window.pageYOffset/2+'px';
+    });
+  </script>
+  
+</body>
+</html>

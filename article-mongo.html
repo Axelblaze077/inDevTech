@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <title>NewsGrid | MONGODB</title>
+  
+
+</head>
+<body>
+  <nav id="nav">
+    <div class="nav-container">
+      <img src="img/logo_light.png" alt="newsgrid logo" class="logo">
+      <div class="social">
+        <a href="https://facebook.com" target="blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com" target="blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://instagram.com" target="blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://youtube.com" target="blank"><i class="fab fa-youtube fa-2x"></i></a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="article-header">
+    <div id="article-mongo">
+    </div>
+  </section>
+  
+
+  <section id="article" class="mb-2">
+    <div class="container max-width">
+      <article class="card">
+        <div class="">
+          <h1 class="l-heading">
+            MongoDB 4.4 and MongoDB Cloud
+          </h1>
+          <div class="meta">
+            <small>
+              <i class="fas fa-user"> Written By Dinesh July 20, 2020</i>
+            </small>
+            <div class="category category-mongo">MongoDB</div>
+          </div>
+          <h2 class="m-heading">MongoDB 4.4</h2>
+          <p>MongoDB 4.4, the latest version of the database, is now available in beta; you can try it out in MongoDB Atlas or download the development release. We think of MongoDB 4.4 as “user-driven engineering”, delivering a number of the features and improvements that have been most requested by the MongoDB community. Headline features of MongoDB 4.4 include:</p>
+          <ul class="list">
+            <li><strong>Aggregation enhancements</strong>: use the new Union stage to combine data from multiple collections into a single result set, define your own Custom Aggregation Expressions, and use new operators for array handling, string manipulation, and more.</li>
+            <li><strong>Refinable shard keys</strong>: as you scale, modify data distribution by adding suffixes to your shard key.</li>
+            <li><strong>Hedged reads</strong>: submit read requests to multiple replicas returning results from the fastest node.</li>
+            <li><strong>Mirrored reads</strong>: mirror a configurable subset of reads to secondaries, keeping their caches warm .</li>
+          </ul>
+          <p>
+            The latest release also includes other features such as compound hashed shard keys, resumable initial sync, streaming replication, global read and write concerns, and more. To learn more about what’s coming, read our guide to what’s new in MongoDB 4.4.
+          </p>
+        </div>
+        <div>
+          <h2>MongoDB Cloud</h2>
+          <p>The best way to use MongoDB is with MongoDB Atlas, our fully-managed global cloud database. Atlas now makes it even easier to manage and optimize MongoDB with new functionality that allows you to run the database on auto-pilot:</p>
+          <ul>
+            <li><strong>Atlas Auto-Scale</strong>, previously beta, is now Generally Available: Atlas monitors metrics in real time and adjusts cluster compute and storage to meet the needs of your workload.</li>
+            <li>Atlas will now proactively give you advice on how to model your data for the best performance. Schema suggestions, available in both the Atlas Performance Advisor and Data Explorer, use database metadata and logs to flag common anti-patterns when working with the document data model. This includes having documents that are too large, having too many collections or indexes, using unbounded arrays, and more.</li>
+          </ul>
+          <p>
+            Atlas is the core of MongoDB Cloud, a unified data platform for modern applications. MongoDB Cloud provides a data foundation, unifying different data services with a common developer experience from cloud to edge. We’re excited to launch many of these data services today.
+          </p>
+          <p>
+            MongoDB Charts is the best way to build visualizations of MongoDB data and now makes accessing and sharing those visualizations even easier, whether directly or a part of an application. The new embedding SDK makes it easier to build charts into your applications and control them directly from application code. Dashboard filtering lets users define a data filter to be applied across all charts on a dashboard, customizing it according to their needs; each user of a shared dashboard can have a different, personalized filter. Dashboards can now also optionally be shared with a public link, giving view-only access to unauthenticated users.
+          </p>
+        </div>
+        <div>
+          <h2 class="mt-2 m-heading">Tools and Integrations</h2>
+          <p>We’ve also announced a number of tools and integrations that make working with the database easier.</p>
+          <p>A new MongoDB shell is now available in beta, and improves on the existing shell with autocomplete, syntax highlighting, contextual help messages, and more. You can also work with MongoDB in your IDE of choice with new integrations for VS Code and Jetbrains products.</p>
+          <p>
+            A new CLI for MongoDB Cloud adds an easily scriptable way of provisioning and controlling cloud resources. Alongside the UI and the API, you can now manage your cloud environments from your command line.
+          </p>
+          <p>
+            If you’re managing MongoDB yourself, two new Kubernetes announcements make the process easier. If you’re an Enterprise customer using our Enterprise Kubernetes Operator with Ops Manager, you’re now able to run Ops Manager itself in Kubernetes, simplifying the setup process. If you’re using the community version of MongoDB, a new MongoDB Community Kubernetes Operator enables you to deploy simple containerized MongoDB clusters.
+          </p>
+          <p>
+            wo new GA drivers expand our language support. The Rust driver, previously available in alpha, is now generally available, supporting this fast-growing language. Expanding the mobile development capabilities we bring with MongoDB Realm, we’re also announcing a new driver for Swift.
+          </p>
+        </div>
+        <div>
+          <h2>Get Building in the Cloud
+          </h2>
+          <p>We’re very excited about everything we’ve announced today. If you are too, you can get started with some of the new functionality by creating a free MongoDB Atlas account in minutes. We can't wait to see what you build!</p>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer id="footer" class="pt-2">
+    <div class="container footer-container">
+      <div>
+        <img src="img/logo_light.png" alt="logo light">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur totam est aut alias cumque quibusdam ea, exercitationem autem incidunt facere.</p>
+      </div>
+      <div>
+        <h3>EMAIL NEWSLETTER</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, obcaecati?</p>
+        <form action="">
+          <input type="email" name="email" placeholder="Enter Email" id="email">
+          <input class="btn btn-primary" type="submit" value="Subscribe">
+        </form>
+      </div>
+      <div>
+        <h2>categories</h2>
+        <ul class="list">
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Sports</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Entertainment</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Technology</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Fashion</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Shopping</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>JOIN OUR CLUB</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nam!</p>
+        <a href="#" class="btn btn-secondary">Join Now</a>
+      </div>
+      <div>
+        <p>Copyright © 2020, All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    var headerBg = document.getElementById('article-mongo');
+    window.addEventListener('scroll', function(){
+      headerBg.style.opacity = 1 - +window.pageYOffset/550+'';
+      headerBg.style.top = +window.pageYOffset+'px';
+      headerBg.style.backgroundPositionY = - +window.pageYOffset/2+'px';
+    });
+  </script>
+  
+</body>
+</html>
