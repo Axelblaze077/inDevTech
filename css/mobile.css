@@ -24,6 +24,10 @@
   grid-template-columns: 1fr;
 }
 
+#showcase .container{
+  padding: 0 0;
+}
+
 /* home-articles */
 
 #home-articles {
