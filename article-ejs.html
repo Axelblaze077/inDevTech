@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <title>NewsGrid | Express.js</title>
+  <title>technovera | Express.js</title>
   
 
 </head>
@@ -19,6 +19,7 @@
   <nav id="nav">
     <div class="nav-container">
       <img src="img/logo.png" alt="newsgrid logo" class="logo">
+      <img src="img/logo-dark.png" alt="newsgrid logo" class="logo-dark">
       <div class="social">
         <a href="https://facebook.com" target="blank"><i class="fab fa-facebook fa-2x"></i></a>
         <a href="https://twitter.com" target="blank"><i class="fab fa-twitter fa-2x"></i></a>
@@ -38,7 +39,7 @@
   </section>
   
 
-  <section id="article" class="mb-1">
+  <section id="article" class="">
     <div class="container max-width">
       <article class="card">
         <div class="">
@@ -155,10 +156,11 @@
 
 
 <!-- footer -->
-<footer id="footer" class="">
+<footer id="footer" class="pt-1">
   <div class="container footer-container">
     <div>
-      <img src="img/logo.png" alt="logo light">
+      <img src="img/logo.png" alt="logo light" class="footer-logo">
+        <img src="img/logo-dark.png" alt="logo dark" class="footer-logo-dark">
       <p>technovera is a leading technology media property, dedicated to obsessively profiling web technologies tech news.</p>
     </div>
     <div>
@@ -201,6 +203,9 @@
       headerBg.style.backgroundPositionY = - +window.pageYOffset/2+'px';
     });
   </script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+
+    <script src="js/dark-mode.js"></script>
   
 </body>
 </html>

@@ -19,6 +19,7 @@
   <nav id="nav">
     <div class="nav-container">
       <img src="img/logo.png" alt="newsgrid logo" class="logo">
+      <img src="img/logo-dark.png" alt="newsgrid logo" class="logo-dark"> 
       <div class="social">
         <a href="https://facebook.com" target="blank"><i class="fab fa-facebook fa-2x"></i></a>
         <a href="https://twitter.com" target="blank"><i class="fab fa-twitter fa-2x"></i></a>
@@ -38,7 +39,7 @@
   </section>
   
 
-  <section id="article" class="mb-1">
+  <section id="article" class="">
     <div class="container max-width">
       <article class="card">
         <div class="">
@@ -49,7 +50,7 @@
             <small>
               <i class="fas fa-user"> Written By Dinesh July 20, 2020</i>
             </small>
-            <div class="category category-tech">TECHNOLOGY</div>
+            <div class="category category-bs">BOOTSTRAP</div>
           </div>
           <p>Bootstrap 5’s official Github project tracking board has more than 765 tasks being shipped with more than 83 pull requests and 311 issues. If we base the release date from the previous development timeframe (Bootstrap 4 to Bootstrap 4.1) the development team took about 3 months to complete Bootstrap 4.1 to Bootstrap 4.2 took about 8 months. We might expect Bootstrap 5 in the first half of 2020. Bootstrap hasn’t confirmed the official release date yet.</p>
           <p>In hindsight, there is a list of changes that we expect on version 5 such as the removal of jQuery which is a major lift for this version and the drop of Internet Explorer 10 and 11 support.</p>
@@ -90,10 +91,11 @@
 
 
 <!-- footer -->
-<footer id="footer" class="">
+<footer id="footer" class="pt-1">
   <div class="container footer-container">
     <div>
-      <img src="img/logo.png" alt="logo light">
+      <img src="img/logo.png" alt="logo light" class="footer-logo">
+      <img src="img/logo-dark.png" alt="logo dark" class="footer-logo-dark">
       <p>technovera is a leading technology media property, dedicated to obsessively profiling web technologies tech news.</p>
     </div>
     <div>
@@ -129,6 +131,9 @@
   </div>
 </footer>
   <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+
+  <script src="js/dark-mode.js"></script>
   
 </body>
 </html>

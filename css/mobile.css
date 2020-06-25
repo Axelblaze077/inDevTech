@@ -11,7 +11,8 @@
 }
 
 #nav ul,
-#nav .logo {
+#nav .logo,
+#nav .logo-dark {
   justify-self: center;
 }
 
@@ -45,6 +46,15 @@
   background: white;
   color: black;
   border-top: 1px gray solid;
+}
+
+.darkmode--activated #home-articles .card {
+  background: black;
+  color: white;
+}
+
+.darkmode--activated #home-articles .card a {
+  color: white;
 }
 #home-articles .card:last-child{
   border-bottom: 1px gray solid;
