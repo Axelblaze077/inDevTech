@@ -98,7 +98,7 @@ p {
 .category-bs { background: var(--sports-color); isolation: isolate; }
 .category-js { background: var(--ent-color);isolation: isolate; }
 .category-node { background: var(--tech-color);isolation: isolate; }
-.category-react { background: var(--primary-color); }
+.category-react { background: var(--primary-color); isolation: isolate; }
 .category-ejs { background: green ; isolation: isolate;}
 .category-api { background: #45046a;isolation: isolate; }
 .category-mern { background: #204051; isolation: isolate; }
