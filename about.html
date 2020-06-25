@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
-  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 1001px)" href="css/widescreen.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -16,7 +16,8 @@
 <body>
   <nav id="nav">
     <div class="nav-container">
-      <img src="img/in-devtech-logo.png" alt="newsgrid logo" class="logo">
+      <img src="img/logo.png" alt="newsgrid logo" class="logo">
+      <img src="img/logo-dark.png" alt="newsgrid logo" class="logo-dark">
       <div class="social">
         <a href="https://facebook.com" target="blank"><i class="fab fa-facebook fa-2x"></i></a>
         <a href="https://twitter.com" target="blank"><i class="fab fa-twitter fa-2x"></i></a>
@@ -30,69 +31,68 @@
     </div>
   </nav>
 
-  <div id="about">
-    <div class="container">
+  <div id="article" class="mb-1">
+    <div class="container max-width">
       <article class="card">
         <h1 class="l-heading">About Us</h1>
         <p>
-          <strong>inDevTech</strong> is a team of people who, from Paraty Tech and Data Seekers (a Paraty Tech spin-off), work with the aim of keeping hoteliers informed of all the latest technological innovations on the market. Concepts such as distribution, OTAs, Google, remarketing, revenue management and SEM are the protagonists of contents written by experts for professionals in the sector.
+          <strong>technover</strong> is a team of people who, from Paraty Tech and Data Seekers (a Paraty Tech spin-off), work with the aim of keeping hoteliers informed of all the latest technological innovations on the market. Concepts such as distribution, OTAs, Google, remarketing, revenue management and SEM are the protagonists of contents written by experts for professionals in the sector.
         </p>
-        <h2>ABOUT INDEVTECH</h2>
+        <h2 class="m-heading">ABOUT TECHNOVERA</h2>
         <p>
-          Paraty Tech is a technology and marketing services company that specialises in hotel solutions and adapts to the industry’s real needs. We have two strong points: an in-depth knowledge of the world of hospitality and our ability to create our own technology.         
+          <strong>technover</strong> is a technology and marketing services company that specialises in hotel solutions and adapts to the industry’s real needs. We have two strong points: an in-depth knowledge of the world of hospitality and our ability to create our own technology.         
         </p>
         <p>
           One of our main aims is to achieve an increase in bookings made at your hotel on your own website as direct booking sales is the channel with greatest profitability, given that it reduces dependency on third parties, decreases the cost per booking, creates brand image, promotes loyalty in clients, increases your hotel’s direct income and increases occupancy.
         </p>
-        <p>Please feel free contact us : indevtech@gmail.com</p>
-       <h2>ABOUT DATA SEEKERS</h2>
-       <p>
-        logo_dataseekers_1At Data Seekers our priority is the client, which is why we fully personalise our services with the goal of optimising your income.
-       </p>
-       <p>
-        All of our products aim to ensure your distribution decisively contributes to increasing your profitability. For this reason we have designed technology tools that enable you to carry out a variety of tasks, ranging from managing your online reputation and engaging in remarketing campaigns, to strictly controlling your rates simultaneously on different website and matching your rates with the OTA of your choice at the same time the client is making a purchase.
-       </p>
-       <p>
-        If you would like to receive more information send us an email at info@dataseekers.es.
-       </p>
+        <p>Please feel free contact us : technovera@gmail.com</p>
       </article>
       
     </div>
   </div>
 
-  <!-- footer -->
-  <footer id="footer" class="pt-2">
-    <div class="container footer-container">
-      <div>
-        <img src="img/in-devtech-logo.png" alt="logo light">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur totam est aut alias cumque quibusdam ea, exercitationem autem incidunt facere.</p>
-      </div>
-      <div>
-        <h3>EMAIL NEWSLETTER</h3>
-        <p>Sign Up to our Newletter for latest new and more awesome content!</p>
-        <form name="contact" action="POST" data-netlify="true">
-          <input type="email" name="email" placeholder="Enter Email" id="email">
-          <input class="btn btn-primary" type="submit" value="Subscribe">
-        </form>
-      </div>
-      <div>
-        <h3>CATEGORIES</h3>
-        <ul class="list">
-          <li><a href="#"><i class="fas fa-chevron-right"></i> React</a></li>
-          <li><a href="#"><i class="fas fa-chevron-right"></i> JavaScript</a></li>
-          <li><a href="#"><i class="fas fa-chevron-right"></i> Angular</a></li>
-          <li><a href="#"><i class="fas fa-chevron-right"></i> Mern</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>JOIN OUR CLUB</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nam!</p>
-        <a href="#" class="btn btn-secondary">Join Now</a>
-      </div>
-      <div>
-        <p>Copyright © 2020, All Rights Reserved</p>
+<!-- footer -->
+<footer id="footer" class="">
+  <div class="container footer-container">
+    <div>
+      <img src="img/logo.png" alt="logo light" class="footer-logo">
+      <img src="img/logo-dark.png" alt="logo dark" class="footer-logo-dark">
+      <p>technovera is a leading technology media property, dedicated to obsessively profiling web technologies tech news.</p>
+    </div>
+    <div>
+      <h3>EMAIL NEWSLETTER</h3>
+      <p>Sign Up to our Newletter for latest new and more awesome content!</p>
+      <form name="contact" action="POST" data-netlify="true">
+        <input type="email" name="email" placeholder="Enter Email" id="email">
+        <input class="btn btn-primary" type="submit" value="Subscribe">
+      </form>
+    </div>
+    <div>
+      <h3>CATEGORIES</h3>
+      <ul class="list">
+        <li><a href="#"><i class="fas fa-chevron-right"></i> React</a></li>
+        <li><a href="#"><i class="fas fa-chevron-right"></i> JavaScript</a></li>
+        <li><a href="#"><i class="fas fa-chevron-right"></i> Angular</a></li>
+        <li><a href="#"><i class="fas fa-chevron-right"></i> Mern</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Follow Us On</h3>
+      <div class="social">
+        <a href="https://facebook.com" target="blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com" target="blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://linkedin.com" target="blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://instagram.com" target="blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://youtube.com" target="blank"><i class="fab fa-youtube fa-2x"></i></a>
       </div>
     </div>
-  </footer>
+    <div>
+      <p>Copyright © 2020, All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+
+ <script src="js/dark-mode.js"></script>
 </body>
 </html>

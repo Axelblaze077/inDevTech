@@ -4,3 +4,6 @@ window.addEventListener('scroll', function(){
   headerBg.style.top = +window.pageYOffset+'px';
   headerBg.style.backgroundPositionY = - +window.pageYOffset/2+'px';
 });
+
+
+

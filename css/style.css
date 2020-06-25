@@ -6,6 +6,10 @@
   --max-width: 1300px;
 }
 
+.darkmode-toggle {
+  z-index: 500;
+}
+
 .category {
   --sports-color: #f99500;
   --ent-color: #a66bbe;
@@ -21,12 +25,12 @@
 body {
   font-family: sans-serif;
   line-height: 1.5;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -233,12 +237,19 @@ ul {
 
 /* navbar */
 #nav {
-  background: #1B1B1B;
-  color: white;
+  background: white;
+  /* navbar dark color 1B1B1B */
+  color: ;
   position: sticky;
   top: 0;
   z-index: 2;
+  
 }
+
+.darkmode--activated #nav {
+  background-color: black;
+}
+
 
 #nav .nav-container {
   display: grid;
@@ -251,15 +262,31 @@ ul {
   width: 180px;
 }
 
+#nav .logo-dark{
+  width: 180px;
+  display: none;
+}
+
+.darkmode--activated #nav .logo {
+  display: none;
+}
+.darkmode--activated #nav .logo-dark {
+  display: inline-block;
+}
+
 #nav ul {
   justify-self: end;
   display: flex;
 }
 
 #nav ul li a {
-  color: white;
+  color: black;
   padding: 0.75rem;
   font-weight: bold;
+}
+
+.darkmode--activated #nav ul li a {
+  color: white;
 }
 
 #nav ul li a.current {
@@ -278,8 +305,12 @@ ul {
 }
 
 #nav .social i {
-  color: white;
+  color: ;
   margin-right: 0.5rem;
+}
+
+.darkmode--activated #nav .social i {
+  color: white;
 }
 
 /* showcase */
@@ -288,7 +319,7 @@ ul {
   color: #fff;
   padding: 2rem;
   position: relative;
-  height: 83vh;
+  height: 89vh;
 }
 
 #showcase:before {
@@ -323,15 +354,18 @@ ul {
 /* home-articles */
 
 #home-articles .card{
-  background: #1d1919;
+  background: #C0C0C0;
+  /* 1d1919 for dark mode */
   padding: 1rem;
-  color: white;
+  color: ;
+  isolation: isolate;
 }
+
 #home-articles article:hover {
   opacity: 0.8;
 }
 #home-articles .card a {
-  color: white;
+  color: ;
 }
 
 #home-articles .articles-container {
@@ -344,8 +378,15 @@ ul {
 /* footer */
 
 #footer {
-  background-color: #1B1B1B;
-  color: #fff;
+  background-color: white;
+  /* bg-color 1B1B1B */
+  color: ;
+  isolation: isolate;
+}
+
+.darkmode--activated #footer {
+  background-color: black;
+  color: white;
 }
 
 #footer .footer-container {
@@ -358,9 +399,26 @@ ul {
   width: 150px;
 }
 
-#footer .footer-container a {
+.darkmode--activated #footer .footer-container a {
   color: white;
 }
+
+#footer .footer-logo {
+}
+#footer .footer-logo-dark {
+  display: none;
+}
+
+.darkmode--activated #footer .footer-logo {
+  display: none;
+}
+.darkmode--activated #footer .footer-logo-dark {
+  display: inline-block;
+}
+
+
+
+
 
 #footer .footer-container input[type='email'], #footer .footer-container input[type='submit'] {
   width: 90%;
@@ -373,19 +431,24 @@ ul {
   grid-column: 1 / span 4;
   text-align: center;
   padding: .5rem;
+  border-top: 1px black solid ;
+  padding: 1rem;
+}
+
+.darkmode--activated #footer .footer-container > *:last-child {
   border-top: 1px white solid ;
+}
+
+#footer ul li:last-child {
+  border: none;
+}
+
+#footer .social i {
   padding: 1rem;
 }
 
 /* about */
-#about  {
-  margin: 2rem 0;
-}
 
-#about p {
-  margin: 1.5rem 0;
-  font-size: 1.1rem;
-}
 
 /* article */
 
@@ -398,9 +461,15 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #f3f3f3;
+  /* 1B1B1B */
+  color: ;
+  padding: 0.5rem;
+  isolation: isolate;
+}
+.darkmode--activated #article .meta {
   background: #1B1B1B;
   color: white;
-  padding: 0.5rem;
 }
 
 #article .meta .category {
@@ -462,3 +531,4 @@ ul {
 .article-header #article-sql {
   background: url('../img/articles/sql.png') no-repeat center center/cover;
 }
+

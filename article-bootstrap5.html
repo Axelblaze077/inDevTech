@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
-  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 1001px)" href="css/widescreen.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <title>NewsGrid | Bootstap</title>
+  <title>NewsGrid | Bootstrap</title>
   
 
 </head>
 <body>
   <nav id="nav">
     <div class="nav-container">
-      <img src="img/in-devtech-logo.png" alt="newsgrid logo" class="logo">
+      <img src="img/logo.png" alt="newsgrid logo" class="logo">
       <div class="social">
         <a href="https://facebook.com" target="blank"><i class="fab fa-facebook fa-2x"></i></a>
         <a href="https://twitter.com" target="blank"><i class="fab fa-twitter fa-2x"></i></a>
@@ -38,7 +38,7 @@
   </section>
   
 
-  <section id="article" class="mb-2">
+  <section id="article" class="mb-1">
     <div class="container max-width">
       <article class="card">
         <div class="">
@@ -62,22 +62,22 @@
           </p>
         </div>
         <div>
-          <h2 class="m-heading py-1">jQuery was removed</h2>
+          <h2 class="m-heading">jQuery was removed</h2>
           <img src="img/articles/jQuery.jpg" alt="">
           <p class="pt-1">jQuery is a library that offers a general-purpose abstraction layer for classic web scripting that is efficient in almost any web development requirements. Its extensible nature allows you to access elements in a document without writing a lot of JavaScript, modify the appearance of your content in a web page which developers take advantage of to bridge the gap across all browsers, change the content of a document, respond to a user’s interaction, retrieve information from a server without refreshing a page through AJAX, add animation to your web page, simplify common JavaScript tasks and the list goes on.</p>
           <p>While Bootstrap has been using jQuery for more than 8 years, jQuery has become quite a large and bloated framework that requires websites using it to download and add trivial load time for a library that may not be used by any other plugin except Bootstrap itself.</p>
           <p>As JavaScript frameworks like Angular, Vue and React dominate the web development community nowadays, jQuery has been losing its popularity as most of these modern frameworks work through the virtual DOM and not on the DOM directly that leads to much faster performance. Although it might sound absurd, it turns out it is much more proficient and anyone using these frameworks will have better control and maintenance over their code than those who use jQuery.</p>
           <p>Moving forward, any jQuery querying features will have to be done with pure or vanilla JavaScript code in Bootstrap 5 which will help with the file size or weight of the framework.</p>
         </div>
-        <div class="pt-1">
-          <h2 class="m-heading pb-1">Switch to Vanilla JavaScript</h2>
+        <div class="">
+          <h2 class="m-heading">Switch to Vanilla JavaScript</h2>
           <img src="img/articles/JS.jpg" alt="">
           <p class="pt-1">JavaScript is the programming language of the web. Most modern websites are powered by JavaScript and all modern web browsers on desktops, consoles, tablets, games and mobile phones include JavaScript interpreters, which makes JavaScript the most universal programming language in the world.</p>
           <p>The removal of jQuery support in Bootstrap 5 gives way to writing efficient vanilla JavaScript code without worrying about the size or adding up any other non-essential functions. While jQuery has been around for a long time, it is completely impossible to use jQuery alone because for the most part, what jQuery does is add a $ object to the global scope, with a lot of functions in it. Even more slick libraries like prototype are not an alternative to JavaScript, but exist only as extra tools to solve common problems.</p>
           <p>If you know how JavaScript works from the root, this major change won’t affect you much but for some developers who only know how to use jQuery, this might be a good chance to learn the language.</p>
         </div>
-        <div class="py-1"> 
-          <h2 class="m-heading pb-1">Responsive Font Sizes</h2>
+        <div class=""> 
+          <h2 class="m-heading">Responsive Font Sizes</h2>
           <img src="img/articles/RFS.jpg" alt="">
           <p class="pt-1">Designing a website that looks good across multiple platforms or viewports has been quite challenging for some developers. Media queries have been a great tool to solve typography common problems that allow developers to control the appearance of typographies on web pages by specifying specific font sizes for the typography elements on a specific viewport.</p>
           <p>Bootstrap 5 will enable responsive font sizes by default which will automatically resize the typography element according to the size of the user’s viewport through RFS engine or Responsive Font Sizes.</p>
@@ -85,20 +85,16 @@
           <p>It is a preprocessor or postprocessor-powered-mechanism that automatically calculates the appropriate font-size values based on the user’s screen size or viewport. It works on known preprocessors or postprocessor tools such as Sass, Less, Stylus or PostCSS.</p>
         </div>
       </article>
-      <aside id="categories" class="card">
-        
-      </aside>
-      
     </div>
   </section>
 
 
 <!-- footer -->
-<footer id="footer" class="pt-2">
+<footer id="footer" class="">
   <div class="container footer-container">
     <div>
-      <img src="img/in-devtech-logo.png" alt="logo light">
-      <p>TechCrunch is a leading technology media property, dedicated to obsessively profiling web technologies tech news.</p>
+      <img src="img/logo.png" alt="logo light">
+      <p>technovera is a leading technology media property, dedicated to obsessively profiling web technologies tech news.</p>
     </div>
     <div>
       <h3>EMAIL NEWSLETTER</h3>
@@ -118,9 +114,14 @@
       </ul>
     </div>
     <div>
-      <h3>JOIN OUR CLUB</h3>
-      <p>Join us! And if you have feedback on this concept, feel free to email me at intechdev@.com.</p>
-      <a href="#" class="btn btn-secondary">Join Now</a>
+      <h3>Follow Us On</h3>
+      <div class="social">
+        <a href="https://facebook.com" target="blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com" target="blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://linkedin.com" target="blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://instagram.com" target="blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://youtube.com" target="blank"><i class="fab fa-youtube fa-2x"></i></a>
+      </div>
     </div>
     <div>
       <p>Copyright © 2020, All Rights Reserved</p>

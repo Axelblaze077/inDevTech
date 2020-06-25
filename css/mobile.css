@@ -1,3 +1,5 @@
+
+
 /* navigation */
 #nav .social {
   display: none;
@@ -40,8 +42,8 @@
 }
 
 #home-articles .card{
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   border-top: 1px gray solid;
 }
 #home-articles .card:last-child{
@@ -68,11 +70,6 @@
 }
 
 
-
-
-
-
-
 @media (max-width: 500px) {
 
   #showcase .showcase-container {
@@ -93,8 +90,8 @@
   }
 
   #home-articles .card{
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     border-top: 1px gray solid;
   }
 
@@ -154,17 +151,19 @@
     padding: 0 0rem;
   }
 
-  #article #categories,
-  #article #join {
+  #article #categories {
     margin: 0 2rem;
   }
 
-  #article #join {
-    margin-bottom: 1.5rem;
+  #footer .social i {
+    margin: .4rem;
   }
 }
 
 @media (min-width: 501px) and (max-width: 767px) {
+  .max-width {
+    max-width: 900px;
+  }
   #home-articles .articles-container .grid-articles {
     display: grid;
     grid-template-columns: 2fr 4fr ;
