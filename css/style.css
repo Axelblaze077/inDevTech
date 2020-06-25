@@ -341,7 +341,7 @@ ul {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
 
 }
 
