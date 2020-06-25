@@ -1,5 +1,5 @@
 var options = {
-  bottom: '64px', // default: '32px'
+  bottom: '32px', // default: '32px'
   right: 'unset', // default: '32px'
   right: '32px', // default: 'unset'
   time: '0s', // default: '0.3s'
