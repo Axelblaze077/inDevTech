@@ -29,6 +29,11 @@ body {
   color: black;
 }
 
+.darkmode--activated body {
+  background-color: black;
+  color: white;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -239,7 +244,6 @@ ul {
 #nav {
   background: white;
   /* navbar dark color 1B1B1B */
-  color: ;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -305,7 +309,6 @@ ul {
 }
 
 #nav .social i {
-  color: ;
   margin-right: 0.5rem;
 }
 
@@ -319,7 +322,7 @@ ul {
   color: #fff;
   padding: 2rem;
   position: relative;
-  height: 89vh;
+  height: 100vh;
 }
 
 #showcase:before {
@@ -338,7 +341,7 @@ ul {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 100vh;
 
 }
 
@@ -357,16 +360,21 @@ ul {
   background: #C0C0C0;
   /* 1d1919 for dark mode */
   padding: 1rem;
-  color: ;
-  isolation: isolate;
 }
+
+.darkmode--activated #home-articles .card {
+  mix-blend-mode: difference;
+}
+
+
+
 
 #home-articles article:hover {
   opacity: 0.8;
 }
-#home-articles .card a {
-  color: ;
-}
+/* #home-articles .card a {
+ 
+} */
 
 #home-articles .articles-container {
   display: grid;
@@ -380,14 +388,9 @@ ul {
 #footer {
   background-color: white;
   /* bg-color 1B1B1B */
-  color: ;
-  isolation: isolate;
+  color:black;
 }
 
-.darkmode--activated #footer {
-  background-color: black;
-  color: white;
-}
 
 #footer .footer-container {
   display: grid;
@@ -399,9 +402,9 @@ ul {
   width: 150px;
 }
 
-.darkmode--activated #footer .footer-container a {
-  color: white;
-}
+/* .darkmode--activated #footer .footer-container a {
+
+} */
 
 #footer .footer-logo {
 }
@@ -416,9 +419,9 @@ ul {
   display: inline-block;
 }
 
-
-
-
+.darkmode--activated #footer .subscribe {
+  mix-blend-mode: difference;
+}
 
 #footer .footer-container input[type='email'], #footer .footer-container input[type='submit'] {
   width: 90%;
@@ -463,14 +466,12 @@ ul {
   align-items: center;
   background: #f3f3f3;
   /* 1B1B1B */
-  color: ;
   padding: 0.5rem;
-  isolation: isolate;
 }
-.darkmode--activated #article .meta {
+/* .darkmode--activated #article .meta {
   background: #1B1B1B;
   color: white;
-}
+} */
 
 #article .meta .category {
   margin-top: 0.4rem;
